@@ -1,8 +1,6 @@
-Flask RESTPlus API POC (flask-resplus-api-poc)
-=================================
+# Flask RESTPlus API POC (flask-resplus-api-poc)
 
-Usage
------
+## Usage
 
 Clone the repo:
 
@@ -62,8 +60,7 @@ Give a ⭐️ if this project helped you!
 ## [References](REFERENCES.md)
 
 
-License
--------
+## License
 
 flask-resplus-api-poc is released under the [MIT License](LICENSE).
 

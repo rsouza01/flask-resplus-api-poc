@@ -4,13 +4,15 @@ from flask import Flask
 from flask_restplus import Api, Resource
 
 
+app = Flask(__name__)
+api = Api(app)
+
+name_space = api.namespace('api', description='flask-resplus-api-poc APIs')
+
+
 def main():
     print('API')
-
-    flask_app = Flask(__name__)
-    app = Api(app=flask_app)
-
-    name_space = app.namespace('flask-resplus-api-poc', description='flask-resplus-api-poc APIs')
+    app.run(debug=True)
 
 
 @name_space.route("/")
@@ -24,7 +26,6 @@ class MainClass(Resource):
         return {
             "status": "Posted new data"
         }
-
 
 
 if __name__ == '__main__':
